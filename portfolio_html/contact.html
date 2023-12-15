@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+        }
+        h1 {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(5, 57, 58);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./interest.html">Interest</a>
+        <a href="./frnd_list.html">Friend List</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+    <h3>Contact Me</h3>
+    <form action="nthg">
+        <fieldset>
+            <legend>Please enter your details:</legend>
+
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstname"><br>
+            
+            <label for="">Contact Number: </label>
+            <input type="number" name="phoneNumber"><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others <br>
+
+            <label for="country">Choose Country</label>
+            <select>
+                <option value="">Select Country: </option>
+                <option value="">Nepal</option>
+                <option value="">India</option>
+                <option value="">China</option>
+            </select> <br>
+
+            <label for="">Your interesr [You can choose multiple items]: </label>
+            <input type="checkbox" name="playing">Playing
+            <input type="checkbox" name="Reading">Reading
+            <input type="checkbox" name="Dancing">Dancing <br>
+
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
+
+            <button>
+                Submit
+            </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

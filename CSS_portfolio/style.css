@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color:purple;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header p{
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: green;
+    overflow: hidden;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+nav a:hover{
+    background-color: gold;
+    color: purple;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+    text-align: justify;
+}
+.column.side{
+    width: 18%;
+}
+
+.column.middle{
+    width: 60%;
+}
+
+.column.last{
+    width: 18%;
+}
+
+
+footer p{
+    clear: both;
+    background-color:purple;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1502px) {
+    .column.side, .column.middle, .column.last{
+        width: 100%;
+    }
+}
+
+
+/* gallery part */
+.gallery{
+    float: left;
+    padding: 10px;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+.gallery:hover{
+    border: red solid 2px;
+}
+
+/* div inside gallery */
+.desc p{
+    background-color: bisque;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* contact area */
+input[type=text], select, textarea{
+    width: 100%;
+    background-color: rgb(238, 231, 232);
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-top: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    margin: 1px;
+    border-radius: 50px;
+    border: none;
+}
